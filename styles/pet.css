@@ -1,0 +1,28 @@
+.pet-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.pet-image {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.pet-text {
+  flex: 1;
+  min-width: 220px;
+}
+.fees {
+  border-top: 1px solid #d9dfd3;
+  padding-top: 12px;
+}
+@media (max-width: 650px) {
+  .pet-image {
+    width: 360px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}

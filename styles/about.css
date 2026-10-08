@@ -1,0 +1,11 @@
+.team-card {
+  padding: 20px;
+  background: #f1f4eb;
+  border-radius: 8px;
+}
+.shelter-image {
+  width: 650px;
+  max-width: 100%;
+  display: block;
+  margin: 24px auto 0;
+}

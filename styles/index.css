@@ -1,0 +1,23 @@
+.welcome-photo {
+  padding: 0;
+  overflow: hidden;
+}
+.welcome-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.steps {
+  list-style-position: inside;
+  padding: 0;
+}
+.steps li {
+  padding: 20px;
+  background: #f1f4eb;
+  border-radius: 8px;
+}
+@media (max-width: 650px) {
+  .welcome-photo {
+    padding: 0;
+  }
+}

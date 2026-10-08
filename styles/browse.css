@@ -1,0 +1,30 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+.filters .selected {
+  background: #b66c3f;
+  border-color: #b66c3f;
+}
+.pet-card {
+  text-align: center;
+  background: white;
+  border: 1px solid #d9dfd3;
+  border-radius: 10px;
+  padding: 24px;
+  transition:
+    box-shadow 0.15s,
+    border-color 0.15s;
+}
+.pet-card:hover {
+  border-color: #637950;
+  box-shadow: 0 4px 15px #35433422;
+}
+.pet-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}

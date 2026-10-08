@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #f6f3ec;
+  color: #354334;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+header {
+  background: #354334;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  flex-wrap: wrap;
+}
+nav a {
+  color: #fff;
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+nav a.selected {
+  background: #ead8bc;
+  color: #354334;
+  font-weight: bold;
+}
+/* change the background color if the link does not have the selected class */
+nav a:not(.selected):hover {
+  background: #596b50;
+}
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main {
+  max-width: 1080px;
+  margin: 30px auto;
+  padding: 0 20px;
+  min-height: 35vh;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.panel {
+  padding: 28px;
+  background: white;
+  border: 1px solid #d9dfd3;
+  border-radius: 12px;
+  margin: 24px 0;
+}
+button,
+.button {
+  display: inline-block;
+  background: #43583b;
+  color: white;
+  border: 1px solid #43583b;
+  border-radius: 6px;
+  padding: 10px 18px;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+button:not(:disabled):not(.selected):hover,
+.button:hover {
+  background: #637950;
+}
+button:not(:disabled):active,
+.button:active {
+  transform: translateY(2px);
+}
+button:disabled {
+  background: #e2e3df;
+  border-color: #c8cbc3;
+  color: #777;
+  cursor: not-allowed;
+}
+input,
+select,
+textarea {
+  font: inherit;
+  padding: 9px;
+  border: 1px solid #a9b2a1;
+  border-radius: 5px;
+  max-width: 100%;
+}
+a {
+  color: #43583b;
+}
+:focus-visible {
+  outline: 3px solid #b66c3f;
+  outline-offset: 3px;
+}
+footer {
+  background: #354334;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+[hidden] {
+  display: none !important;
+}
+.pet-grid,
+.team-grid,
+.steps {
+  display: grid;
+  /* Automatically arranges columns based on the available width， with a minimum width of 220px per column */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 650px) {
+  main {
+    padding: 0 12px;
+  }
+  .panel {
+    padding: 18px;
+  }
+  nav {
+    gap: 4px;
+  }
+  nav a {
+    padding: 8px 12px;
+  }
+}

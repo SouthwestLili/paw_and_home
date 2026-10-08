@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paw &amp; Home – Application</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/apply.css">
+    <script src="scripts/apply.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Links -->
+        <nav>
+            <a href="index.html" class="selected">Home</a>
+            <a href="browse.html">Browse Pets</a>
+            <a href="about.html">About Us</a>
+        </nav>
+        <img class="banner" src="images/banner.png" alt="Paw &amp; Home — Small Actions, Brighter Futures.">
+    </header>
+    <main>
+        <form id="application" class="panel application">
+            <h1>Adoption Application</h1>
+            <div id="pet-information" class="summary"></div>
+            <fieldset>
+                <legend>Your Information</legend>
+                <div class="form-grid">
+                    <label for="full-name">Full name</label><input id="full-name" name="fullName" type="text"
+                        autocomplete="name">
+                    <label for="email">Email address</label><input id="email" name="email" type="email"
+                        autocomplete="email">
+                    <label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel">
+                    <label for="address">Home address</label><input id="address" name="address" type="text"
+                        autocomplete="street-address">
+                    <label for="residents">Number of residents in the home</label><input id="residents" name="residents"
+                        type="number" min="1" step="1">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Current Pets in Your Home</legend><label for="current-pets">List your other pets (species, age
+                    and health).</label><textarea id="current-pets" name="currentPets" rows="4"
+                    placeholder="For example: One cat, 3 years old, healthy. Enter None if you have no pets."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Pet Experience</legend>
+                <div class="form-grid"><label for="experience">Experience with this kind of pet</label><select
+                        id="experience" name="experience">
+                        <option>None</option>
+                        <option>Some</option>
+                        <option>Extensive</option>
+                    </select><label for="living">Where will this pet primarily live?</label><select id="living"
+                        name="living">
+                        <option>Indoor</option>
+                        <option>Outdoor</option>
+                        <option>Both</option>
+                    </select></div>
+            </fieldset>
+            <fieldset>
+                <legend>Support Us</legend><label for="donation">Optional donation</label><select id="donation"
+                    name="donation">
+                    <option value="0">$0</option>
+                    <option value="10">$10</option>
+                    <option value="25">$25</option>
+                    <option value="50">$50</option>
+                </select>
+            </fieldset>
+            <label class="checkbox"><input id="care" type="checkbox" name="care">I agree to provide proper care, food,
+                shelter and medical attention for this pet.</label>
+            <label class="checkbox"><input id="understand" type="checkbox" name="understand">I understand that this
+                application does not guarantee adoption.</label>
+            <button id="submit" type="submit" disabled>Submit Application</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 Paw &amp; Home | Small Actions, Brighter Futures.</p>
+    </footer>
+</body>
+
+</html>

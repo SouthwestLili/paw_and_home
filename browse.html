@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paw &amp; Home – Browse</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/browse.css">
+    <script src="data/shelterData.js" defer></script>
+    <script src="scripts/browse.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navigation Links -->
+        <nav>
+            <a href="index.html" class="selected">Home</a>
+            <a href="browse.html">Browse Pets</a>
+            <a href="about.html">About Us</a>
+        </nav>
+        <img class="banner" src="images/banner.png" alt="Paw &amp; Home — Small Actions, Brighter Futures.">
+    </header>
+    <main>
+        <section class="panel">
+            <h1>Select a Shelter</h1><label for="shelter">Choose a shelter to see its pets:</label><select id="shelter">
+                <option value="">Select a shelter</option>
+            </select>
+        </section>
+        <div id="browse-content" hidden>
+            <div id="pet-types" class="filters"></div>
+            <section id="pets" class="pet-grid"></section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Paw &amp; Home | Small Actions, Brighter Futures.</p>
+    </footer>
+</body>
+
+</html>
